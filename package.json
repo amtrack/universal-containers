@@ -1,0 +1,17 @@
+{
+  "name": "universal-containers",
+  "version": "0.0.0",
+  "description": "> Demo project showing an opinionated Development Lifecycle for Force.com",
+  "private": true,
+  "main": "",
+  "scripts": {
+    "test": "npm run test:build",
+    "test:build": "force-dev-tool validateTest ci",
+    "fix:profile": "perl -0777 -p -i -e 's|(<userPermissions>.*?</userPermissions>)| $1 =~ /EditBillingInfo/?\"\":$1|gse' src/profiles/Admin.profile && perl -0777 -p -i -e 's|(<userPermissions>.*?</userPermissions>)| $1 =~ /ManageSandboxes/?\"\":$1|gse' src/profiles/Admin.profile && perl -i -n -e \"print if /\\S/\" src/profiles/Admin.profile"
+  },
+  "author": "Matthias Rolke <mr.amtrack@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "force-dev-tool": "^0.8.0"
+  }
+}

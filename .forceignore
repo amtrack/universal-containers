@@ -1,0 +1,9 @@
+# Format:
+#  MetadataType/ComponentName
+# Examples:
+#  ApexPage/yahoo_map
+#  CustomField/Account.SLA__c
+#  **/WorkBadge*
+
+# MavensMate: Unrecognized package.xml metadata type: MatchingRule. See MatchingRules instead
+MatchingRule/*

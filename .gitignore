@@ -1,0 +1,23 @@
+## Force.com Migration Tool
+build.properties
+.ant-targets-build.xml
+
+## Force.com IDE
+.project
+.settings
+salesforce.schema
+Referenced Packages
+
+## MavensMate
+config/
+*.sublime-*
+mm.log
+debug/
+
+## OS
+.DS_Store
+
+## dotenv
+.env
+
+node_modules/
