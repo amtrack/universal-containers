@@ -414,6 +414,16 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>VATNumber__c</fullName>
+        <externalId>false</externalId>
+        <label>VAT Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Website</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -468,6 +478,13 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>VAT_Number</fullName>
+        <active>true</active>
+        <errorConditionFormula>LEN(VATNumber__c) != 10</errorConditionFormula>
+        <errorDisplayField>VATNumber__c</errorDisplayField>
+        <errorMessage>VAT Number has to be 10 characters long</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>AltavistaNews</fullName>
         <availability>online</availability>

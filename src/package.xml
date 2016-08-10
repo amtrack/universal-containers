@@ -35,6 +35,10 @@
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>Account.VATNumber__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
         <members>Account</members>
         <members>AccountContactRole</members>
         <members>Activity</members>
@@ -319,6 +323,10 @@
         <members>Order</members>
         <members>User</members>
         <name>SharingRules</name>
+    </types>
+    <types>
+        <members>Account.VAT_Number</members>
+        <name>ValidationRule</name>
     </types>
     <types>
         <members>Account.AltavistaNews</members>
