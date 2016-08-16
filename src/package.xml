@@ -192,7 +192,6 @@
         <members>Contract.MyActivatedContracts</members>
         <members>Contract.MyDraftContracts</members>
         <members>Contract.MyInApprovalContracts</members>
-        <members>Idea.Ideas_Last_7_Days</members>
         <members>Lead.AllOpenLeads</members>
         <members>Lead.MyUnreadLeads</members>
         <members>Lead.TodaysLeads</members>
@@ -206,15 +205,11 @@
         <members>Order.AllDraftOrders</members>
         <members>Order.AllOrders</members>
         <members>Product2.AllProducts</members>
-        <members>SocialPost.AllSocialPosts</members>
         <members>Solution.AllReviewedSolutions</members>
         <members>Solution.AllUnreviewedSolutions</members>
         <members>User.ActiveUsers</members>
         <members>User.AdminUsers</members>
         <members>User.AllUsers</members>
-        <members>WorkFeedbackRequest.AboutTopics</members>
-        <members>WorkFeedbackRequest.All</members>
-        <members>WorkOrder.My_WorkOrders</members>
         <name>ListView</name>
     </types>
     <types>
@@ -415,7 +410,6 @@
         <members>Order</members>
         <members>OrgPreference</members>
         <members>PathAssistant</members>
-        <members>PersonalJourney</members>
         <members>Product</members>
         <members>Quote</members>
         <members>Search</members>

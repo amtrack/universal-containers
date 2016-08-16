@@ -7,3 +7,13 @@
 
 # MavensMate: Unrecognized package.xml metadata type: MatchingRule. See MatchingRules instead
 MatchingRule/*
+
+# Entity of type 'ListView' named 'XXX' cannot be found
+ListView/WorkOrder.My_WorkOrders
+ListView/SocialPost.AllSocialPosts
+ListView/WorkFeedbackRequest.AboutTopics
+ListView/WorkFeedbackRequest.All
+ListView/Idea.Ideas_Last_7_Days
+
+# Deployment fails to sandbox: Not available for deploy for this organization
+Settings/PersonalJourney
