@@ -1,4 +1,426 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AppSwitcher</members>
+        <members>Salesforce1</members>
+        <name>AppMenu</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <members>Lead</members>
+        <name>AssignmentRules</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <members>Lead</members>
+        <name>AutoResponseRules</name>
+    </types>
+    <types>
+        <members>Internal Zone</members>
+        <name>Community</name>
+    </types>
+    <types>
+        <members>standard__AppLauncher</members>
+        <members>standard__Chatter</members>
+        <members>standard__Community</members>
+        <members>standard__Content</members>
+        <members>standard__DataAssessment</members>
+        <members>standard__Marketing</members>
+        <members>standard__Platform</members>
+        <members>standard__Sales</members>
+        <members>standard__Service</members>
+        <members>standard__ServiceConsole</members>
+        <members>standard__Sites</members>
+        <members>standard__Work</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>AccountContactRole</members>
+        <members>Activity</members>
+        <members>Asset</members>
+        <members>AssistantProgress</members>
+        <members>Campaign</members>
+        <members>CampaignMember</members>
+        <members>Case</members>
+        <members>CaseContactRole</members>
+        <members>Contact</members>
+        <members>ContentVersion</members>
+        <members>Contract</members>
+        <members>ContractContactRole</members>
+        <members>DuplicateRecordItem</members>
+        <members>DuplicateRecordSet</members>
+        <members>EmailMessage</members>
+        <members>Event</members>
+        <members>ExchangeUserMapping</members>
+        <members>FeedItem</members>
+        <members>ForecastingCategoryMapping</members>
+        <members>Idea</members>
+        <members>Lead</members>
+        <members>Macro</members>
+        <members>MacroAction</members>
+        <members>MacroInstruction</members>
+        <members>Opportunity</members>
+        <members>OpportunityCompetitor</members>
+        <members>OpportunityContactRole</members>
+        <members>OpportunityLineItem</members>
+        <members>Order</members>
+        <members>OrderItem</members>
+        <members>PartnerRole</members>
+        <members>Pricebook2</members>
+        <members>PricebookEntry</members>
+        <members>Product2</members>
+        <members>ProfileSkill</members>
+        <members>ProfileSkillEndorsement</members>
+        <members>ProfileSkillUser</members>
+        <members>SOSSession</members>
+        <members>SOSSessionActivity</members>
+        <members>Site</members>
+        <members>SocialPersona</members>
+        <members>SocialPost</members>
+        <members>Solution</members>
+        <members>StreamingChannel</members>
+        <members>Task</members>
+        <members>User</members>
+        <members>UserProvisioningRequest</members>
+        <members>WorkBadge</members>
+        <members>WorkBadgeDefinition</members>
+        <members>WorkOrder</members>
+        <members>WorkOrderLineItem</members>
+        <members>WorkThanks</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>CompanyDashboards</members>
+        <members>CompanyDashboards/AdoptionDashboard</members>
+        <members>CompanyDashboards/CompanyPerformanceDashboard</members>
+        <name>Dashboard</name>
+    </types>
+    <types>
+        <members>SharedDocuments</members>
+        <name>Document</name>
+    </types>
+    <types>
+        <members>unfiled$public/ContactFollowUpSAMPLE</members>
+        <members>unfiled$public/LeadsNewassignmentnotificationSAMPLE</members>
+        <members>unfiled$public/LeadsWebtoLeademailresponseSAMPLE</members>
+        <members>unfiled$public/SUPPORTCaseResponsewithSolutionSAMPLE</members>
+        <members>unfiled$public/SUPPORTCaseescalationnotificationSAMPLE</members>
+        <members>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</members>
+        <members>unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE</members>
+        <members>unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE</members>
+        <members>unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE</members>
+        <members>unfiled$public/SUPPORTWebtoCaseemailresponseSAMPLE</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <name>EscalationRules</name>
+    </types>
+    <types>
+        <members>Dashboard Home Page Default</members>
+        <name>HomePageLayout</name>
+    </types>
+    <types>
+        <members>Account-Account Layout</members>
+        <members>Asset-Asset Layout</members>
+        <members>Campaign-Campaign Layout</members>
+        <members>CampaignMember-Campaign Member Page Layout</members>
+        <members>Case-Case Layout</members>
+        <members>CaseClose-Close Case Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>ContentVersion-Content Version Layout</members>
+        <members>Contract-Contract Layout</members>
+        <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+        <members>EmailMessage-Email Message Layout</members>
+        <members>Event-Event Layout</members>
+        <members>FeedItem-Feed Item Layout</members>
+        <members>Global-Global Layout</members>
+        <members>Idea-Idea Layout</members>
+        <members>Lead-Lead Layout</members>
+        <members>Macro-Macro Layout</members>
+        <members>Opportunity-Opportunity Layout</members>
+        <members>OpportunityLineItem-Opportunity Product Layout</members>
+        <members>Order-Order Layout</members>
+        <members>OrderItem-Order Product Layout</members>
+        <members>Pricebook2-Price Book Layout</members>
+        <members>PricebookEntry-Price Book Entry</members>
+        <members>Product2-Product Layout</members>
+        <members>ProfileSkill-Skill Layout</members>
+        <members>ProfileSkillEndorsement-Endorsement Layout</members>
+        <members>ProfileSkillUser-Skill User Layout</members>
+        <members>SOSSession-SOS Session Layout</members>
+        <members>SOSSessionActivity-SOS Session Activity Layout</members>
+        <members>SocialPersona-Social Persona Layout</members>
+        <members>SocialPost-Social Post Layout</members>
+        <members>Solution-Solution Layout</members>
+        <members>Task-Task Layout</members>
+        <members>User-User Layout</members>
+        <members>UserProvAccount-User Provisioning Account Layout</members>
+        <members>UserProvisioningLog-User Provisioning Log Layout</members>
+        <members>UserProvisioningRequest-User Provisioning Request Layout</members>
+        <members>WorkAccess-Access Layout</members>
+        <members>WorkBadge-Badge Received Layout</members>
+        <members>WorkBadgeDefinition-Badge Layout</members>
+        <members>WorkOrder-Work Order Layout</members>
+        <members>WorkOrderLineItem-Work Order Line Item Layout</members>
+        <members>WorkThanks-Thanks Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Account.AllAccounts</members>
+        <members>Account.MyAccounts</members>
+        <members>Account.NewThisWeek</members>
+        <members>Activity.MyActivities</members>
+        <members>Activity.MyDelegatedActivities</members>
+        <members>Activity.MyTeamsActivities</members>
+        <members>Activity.TodaysTasks</members>
+        <members>Activity.UpcomingEvents</members>
+        <members>Asset.AllAssets</members>
+        <members>Campaign.AllActiveCampaigns</members>
+        <members>Campaign.MyActiveCampaigns</members>
+        <members>Case.AllOpenCases</members>
+        <members>Case.MyCases</members>
+        <members>Case.MyOpenCases</members>
+        <members>Contact.AllContacts</members>
+        <members>Contact.BirthdaysThisMonth</members>
+        <members>Contact.NewThisWeek</members>
+        <members>Contract.AllActivatedContracts</members>
+        <members>Contract.AllContracts</members>
+        <members>Contract.AllDraftContracts</members>
+        <members>Contract.AllInApprovalContracts</members>
+        <members>Contract.MyActivatedContracts</members>
+        <members>Contract.MyDraftContracts</members>
+        <members>Contract.MyInApprovalContracts</members>
+        <members>Idea.Ideas_Last_7_Days</members>
+        <members>Lead.AllOpenLeads</members>
+        <members>Lead.MyUnreadLeads</members>
+        <members>Lead.TodaysLeads</members>
+        <members>Opportunity.AllOpportunities</members>
+        <members>Opportunity.ClosingNextMonth</members>
+        <members>Opportunity.ClosingThisMonth</members>
+        <members>Opportunity.MyOpportunities</members>
+        <members>Opportunity.NewThisWeek</members>
+        <members>Opportunity.Won</members>
+        <members>Order.AllActivatedOrders</members>
+        <members>Order.AllDraftOrders</members>
+        <members>Order.AllOrders</members>
+        <members>Product2.AllProducts</members>
+        <members>SocialPost.AllSocialPosts</members>
+        <members>Solution.AllReviewedSolutions</members>
+        <members>Solution.AllUnreviewedSolutions</members>
+        <members>User.ActiveUsers</members>
+        <members>User.AdminUsers</members>
+        <members>User.AllUsers</members>
+        <members>WorkFeedbackRequest.AboutTopics</members>
+        <members>WorkFeedbackRequest.All</members>
+        <members>WorkOrder.My_WorkOrders</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Contact</members>
+        <members>Lead</members>
+        <name>MatchingRules</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <members>Analytics Cloud Integration User</members>
+        <members>Analytics Cloud Security User</members>
+        <members>Chatter External User</members>
+        <members>Chatter Free User</members>
+        <members>Chatter Moderator User</members>
+        <members>Chatter Only User</members>
+        <members>Company Communities User</members>
+        <members>ContractManager</members>
+        <members>Customer Community Login User</members>
+        <members>Customer Community Plus Login User</members>
+        <members>Customer Community Plus User</members>
+        <members>Customer Community User</members>
+        <members>Guest License User</members>
+        <members>High Volume Customer Portal User</members>
+        <members>MarketingProfile</members>
+        <members>Partner Community Login User</members>
+        <members>Partner Community User</members>
+        <members>ReadOnly</members>
+        <members>SolutionManager</members>
+        <members>Standard</members>
+        <members>StandardAul</members>
+        <members>Work%2Ecom Only User</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Case.NewChildCase</members>
+        <members>CollaborationGroup.NewGroupMember</members>
+        <members>CollaborationGroup.NewGroupRecord</members>
+        <members>FeedItem.NewTaskFromFeedItem</members>
+        <members>LogACall</members>
+        <members>NewAccount</members>
+        <members>NewCase</members>
+        <members>NewContact</members>
+        <members>NewEvent</members>
+        <members>NewGroup</members>
+        <members>NewLead</members>
+        <members>NewNote</members>
+        <members>NewOpportunity</members>
+        <members>NewTask</members>
+        <members>Task.Defer</members>
+        <members>Task.Defer_0</members>
+        <members>Task.EditDescription</members>
+        <members>Task.EditDescription_0</members>
+        <members>Task.UpdatePriority</members>
+        <members>Task.UpdatePriority_0</members>
+        <members>Task.UpdateStatus</members>
+        <members>Task.UpdateStatus_0</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>Metric.Completion</members>
+        <members>Metric.Progress</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>unfiled$public/SampleReportActiveUsers</members>
+        <members>unfiled$public/SampleReportCasesStatusbyRep</members>
+        <members>unfiled$public/SampleReportClosedSales</members>
+        <members>unfiled$public/SampleReportCompletedActivities</members>
+        <members>unfiled$public/SampleReportCustomReportsbyUser</members>
+        <members>unfiled$public/SampleReportDocumentLibrary</members>
+        <members>unfiled$public/SampleReportLastModifiedBy</members>
+        <members>unfiled$public/SampleReportLeadsbyLeadSource</members>
+        <members>unfiled$public/SampleReportLoginLeaderboard</members>
+        <members>unfiled$public/SampleReportLoginWallofShame</members>
+        <members>unfiled$public/SampleReportMonthtoDateTrending</members>
+        <members>unfiled$public/SampleReportOpenCasesByPriority</members>
+        <members>unfiled$public/SampleReportOpenDeals</members>
+        <members>unfiled$public/SampleReportPipelineByCloseMonth</members>
+        <members>unfiled$public/SampleReportPipelineHistory</members>
+        <members>unfiled$public/SampleReportSalesLeaderboard</members>
+        <members>unfiled$public/SampleReportSalesPipelinebyStage</members>
+        <members>unfiled$public/SampleReportSolutionsAdded</members>
+        <members>unfiled$public/SampleReportTopAccounts</members>
+        <members>unfiled$public/SampleReportUsersLoggedIn</members>
+        <members>unfiled$public/SampleReportofAccounts</members>
+        <members>unfiled$public/SampleReportofCases</members>
+        <members>unfiled$public/SampleReportofContacts</members>
+        <members>unfiled$public/SampleReportofDocuments</members>
+        <members>unfiled$public/SampleReportofLeads</members>
+        <members>unfiled$public/SampleReportofOpenTasks</members>
+        <members>unfiled$public/SampleReportofOpportunities</members>
+        <members>unfiled$public/SampleReportofReports</members>
+        <members>unfiled$public/SampleReportofSolutions</members>
+        <members>unfiled$public/SampleReportofTasksandActivities</members>
+        <members>unfiled$public/SampleReportsLeadsbyStatus</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Asset</members>
+        <members>Campaign</members>
+        <members>Case</members>
+        <members>Contact</members>
+        <members>Lead</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>User</members>
+        <name>SharingRules</name>
+    </types>
+    <types>
+        <members>Account.AltavistaNews</members>
+        <members>Account.GoogleMaps</members>
+        <members>Account.GoogleNews</members>
+        <members>Account.GoogleSearch</members>
+        <members>Account.HooversProfile</members>
+        <members>Account.YahooMaps</members>
+        <members>Campaign.ViewAllCampaignMembers</members>
+        <members>Campaign.ViewCampaignInfluenceReport</members>
+        <members>Contact.GoogleMaps</members>
+        <members>Contact.GoogleSearch</members>
+        <members>Contact.SendGmail</members>
+        <members>Contact.YahooMaps</members>
+        <members>Contact.YahooWeather</members>
+        <members>Lead.AltavistaNews</members>
+        <members>Lead.GoogleMaps</members>
+        <members>Lead.GoogleNews</members>
+        <members>Lead.GoogleSearch</members>
+        <members>Lead.HooversProfile</members>
+        <members>Lead.SendGmail</members>
+        <members>Lead.YahooMaps</members>
+        <name>WebLink</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Asset</members>
+        <members>AssistantProgress</members>
+        <members>Campaign</members>
+        <members>CampaignMember</members>
+        <members>Case</members>
+        <members>Contact</members>
+        <members>Contract</members>
+        <members>DuplicateRecordItem</members>
+        <members>DuplicateRecordSet</members>
+        <members>EmailMessage</members>
+        <members>Event</members>
+        <members>ExchangeUserMapping</members>
+        <members>FeedItem</members>
+        <members>Idea</members>
+        <members>Lead</members>
+        <members>Macro</members>
+        <members>MacroAction</members>
+        <members>MacroInstruction</members>
+        <members>Opportunity</members>
+        <members>OpportunityLineItem</members>
+        <members>Order</members>
+        <members>OrderItem</members>
+        <members>Organization</members>
+        <members>Product2</members>
+        <members>ProfileSkill</members>
+        <members>ProfileSkillEndorsement</members>
+        <members>ProfileSkillUser</members>
+        <members>SOSSession</members>
+        <members>SOSSessionActivity</members>
+        <members>Site</members>
+        <members>SocialPersona</members>
+        <members>SocialPost</members>
+        <members>Solution</members>
+        <members>StreamingChannel</members>
+        <members>Task</members>
+        <members>User</members>
+        <members>UserLicense</members>
+        <members>UserProvisioningRequest</members>
+        <members>WorkBadge</members>
+        <members>WorkBadgeDefinition</members>
+        <members>WorkOrder</members>
+        <members>WorkOrderLineItem</members>
+        <members>WorkThanks</members>
+        <name>Workflow</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Activities</members>
+        <members>Address</members>
+        <members>BusinessHours</members>
+        <members>Case</members>
+        <members>Company</members>
+        <members>Contract</members>
+        <members>Entitlement</members>
+        <members>Forecasting</members>
+        <members>Ideas</members>
+        <members>Knowledge</members>
+        <members>LeadConvert</members>
+        <members>LiveAgent</members>
+        <members>Mobile</members>
+        <members>Name</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>OrgPreference</members>
+        <members>PathAssistant</members>
+        <members>PersonalJourney</members>
+        <members>Product</members>
+        <members>Quote</members>
+        <members>Search</members>
+        <members>Security</members>
+        <name>Settings</name>
+    </types>
     <version>37.0</version>
 </Package>
