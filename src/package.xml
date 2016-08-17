@@ -410,7 +410,6 @@
         <members>Order</members>
         <members>OrgPreference</members>
         <members>PathAssistant</members>
-        <members>PersonalJourney</members>
         <members>Product</members>
         <members>Quote</members>
         <members>Search</members>
