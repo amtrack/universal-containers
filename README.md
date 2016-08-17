@@ -118,15 +118,17 @@ Note: Recognized the errors on `validateTest`?
 
 To fix those errors, run the following command
 
-```console
-$ npm run fix:profile
-```
-
-and add the following lines to `.forceignore`, then repeat step 4.
+add the following lines to `.forceignore` and repeat step 4:
 
 ```text
 # Deployment fails to sandbox: Not available for deploy for this organization
 Settings/PersonalJourney
+```
+
+Then run the following command to remove the billing from the `Admin.profile`:
+
+```console
+$ npm run fix:profile
 ```
 
 Congrats! You successfully retrieved almost all available metadata.
