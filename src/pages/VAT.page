@@ -1,0 +1,3 @@
+<apex:page showHeader="true" sidebar="true" standardController="Account">
+VAT: {!Account.VAT_Number__c}
+</apex:page>
