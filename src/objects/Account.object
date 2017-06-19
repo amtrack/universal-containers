@@ -481,7 +481,7 @@
     <validationRules>
         <fullName>VAT_Number_10</fullName>
         <active>true</active>
-        <errorConditionFormula>LEN(VAT_Number__c) != 10</errorConditionFormula>
+        <errorConditionFormula>LEN(VAT_Number__c) &lt; 10</errorConditionFormula>
         <errorDisplayField>VAT_Number__c</errorDisplayField>
         <errorMessage>VAT Number must be 10 characters</errorMessage>
     </validationRules>
