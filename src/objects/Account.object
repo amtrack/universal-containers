@@ -485,6 +485,16 @@
         <errorDisplayField>VAT_Number__c</errorDisplayField>
         <errorMessage>VAT Number must be 10 characters</errorMessage>
     </validationRules>
+    <validationRules>
+        <fullName>Test_Min_5_Max_10</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(
+            LEN(Test__c) &lt; 5,
+            LEN(Test__c) &gt; 10
+        )</errorConditionFormula>
+        <errorDisplayField>Test__c</errorDisplayField>
+        <errorMessage>Test__c should be between 5 and 10 characters long</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>AltavistaNews</fullName>
         <availability>online</availability>
